@@ -1,15 +1,25 @@
 h1 {
-    color: #27aedb;
+    color: black;
     text-align: center;
+    /* text-transform: uppercase; */
     }
     
 
 button{
-    color: #27aedb;
+    color: tomato;
+    font-weight: 500;
     text-align: center;
     justify-content: center;
     align-items: center;
+    border:none;
+    outline:none;
+    background-color: transparent;
+    padding:12px;
+    font-size: large;
+    text-transform: uppercase;
 }
+
+
 
 .main-container{
     display:flex;
@@ -22,6 +32,7 @@ button{
     justify-content: space-evenly;
     align-items: center;
     margin-bottom:10px;
+    margin-top: 20px;
 }
 
 .items-container{
@@ -29,23 +40,29 @@ button{
     /* gap: 10%; */
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top:20px;
     /* border:2px solid green; */
 }
 
 .itemcont{
+    
     display:flex;
-    padding: 1px 10px;
+    padding: 3px 10px;
     justify-content: space-evenly;
-    border:2px solid tomato;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width:40%;
     gap:5% 2%;
     margin:1%;
+    border-radius: 15px;
 }
 
 img{
     /* border: 2px solid grey; */
     border-radius: 10px;
-    padding:5px;
+    border:3px solid orange;
+    /* padding:5px; */
+    width:230px;
+    height:160px;
 }
 
 .right-container{
@@ -60,7 +77,7 @@ img{
     display: flex;
     color:green;
     justify-content: space-between;
-    border-bottom: 2px solid black;
+    border-bottom: 2px dotted black;
     /* gap:20px; */
 }
 
@@ -69,6 +86,15 @@ img{
     font-size: 18px;
 }
 
-.nav-container > span{
-    border-bottom: 2px solid green;
+h1{
+    color:black;
+    margin-bottom: 10px;
+    /* border-bottom: 2px solid tomato; */
 }
+
+#price{
+     color:tomato;
+     font-size: 16px;
+     font-weight: 700;
+}
+

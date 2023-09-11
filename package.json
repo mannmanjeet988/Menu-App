@@ -1,9 +1,12 @@
 {
   "name": "react-boilerplate",
   "version": "1.0.0",
+  "homepage": "https://mannmanjeet988.github.io/Menu-App",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
     "test": "jest --no-color 2>output.txt",
     "start": "webpack-dev-server --mode development --watch --open --hot",
     "build": "webpack --mode production"
@@ -12,8 +15,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^9.5.0",
     "css-loader": "^4.3.0",
+    "cypress": "^9.5.0",
+    "gh-pages": "^6.0.0",
     "jest-junit": "^11.1.0",
     "jsdom": "^16.4.0",
     "react": "^16.13.1",

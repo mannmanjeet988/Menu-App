@@ -37,10 +37,10 @@ const MenuComp=()=>{
         <div className="main-container">
                 <h1>Our Menu</h1>
                 <div className="nav-container"> 
-                    <span id="main"  onClick={()=>showAllItems()}>All </span>
-                    <span id="filter-btn-1" onClick={()=>showBreakfastItems()}>Breakfast </span>
-                    <span  id="filter-btn-2" onClick={()=>showLunchItems()}>Lunch </span>
-                    <span id="filter-btn-3" onClick={()=>showShakesItems()}>Shakes</span>
+           < button id="main"  onClick={()=>showAllItems()}>All </button>
+                    <button id="filter-btn-1" onClick={()=>showBreakfastItems()}>Breakfast </button>
+                    <button  id="filter-btn-2" onClick={()=>showLunchItems()}>Lunch </button>
+                    <button id="filter-btn-3" onClick={()=>showShakesItems()}>Shakes</button>
                 </div>
                 <Item  items={items} />
                 
