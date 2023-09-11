@@ -58,7 +58,7 @@ img{
 
  .title{
     display: flex;
-    color:tomato;
+    color:green;
     justify-content: space-between;
     border-bottom: 2px solid black;
     /* gap:20px; */

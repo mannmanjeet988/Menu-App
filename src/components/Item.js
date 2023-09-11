@@ -2,11 +2,25 @@ import React from "react"
 
 const Item = ({items})=>{
 
-    let str="hello manjeet";
-    function convertToUpperCase(str){
-      let arr = str.split(" ").trim()
-        
+    
+    function convertToUpperCase(str) {
+        let arr = str.split(" ");
+        for (let i = 0; i < arr.length; i++) {
+            arr[i] = arr[i].trim()[0].toUpperCase() + arr[i].substring(1);
+        }
+        console.log(arr.join(" "));
+        return arr.join(" ");
     }
+    
+    function convertFirstLetterToUpperCase(str) {
+        if (str.length === 0) {
+            return str; // Handle empty string
+        }
+        
+        return str[0].toUpperCase() + str.substring(1);
+    }
+    
+    
 
     return(
         <div className="items-container" >
@@ -20,11 +34,11 @@ const Item = ({items})=>{
                                 
                                 <div className="right-container">
                                     <div className="title">
-                                        <span>{item.title}</span>
+                                        <span>{convertToUpperCase(item.title)}</span>
                                         <span>${item.price}</span>
                                     </div>
                                     <div className="desc">
-                                    <p>{item.desc}</p>
+                                    <p>{convertFirstLetterToUpperCase(item.desc)}</p>
                                     </div>
                                 </div>
                             </div>
