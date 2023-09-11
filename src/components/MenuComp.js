@@ -38,8 +38,8 @@ const MenuComp=()=>{
                 <div className="nav-container"> 
                     <span id="main"  onClick={()=>showAllItems()}>All </span>
                     <span id="filter-btn-1" onClick={()=>showBreakfastItems()}>Breakfast </span>
-                    <span  id="filter-btn-1" onClick={()=>showLunchItems()}>Lunch </span>
-                    <span id="filter-btn-1" onClick={()=>showShakesItems()}>Shakes</span>
+                    <span  id="filter-btn-2" onClick={()=>showLunchItems()}>Lunch </span>
+                    <span id="filter-btn-3" onClick={()=>showShakesItems()}>Shakes</span>
                 </div>
                 <div className="items-container">
                     {
