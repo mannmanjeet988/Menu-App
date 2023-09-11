@@ -36,10 +36,10 @@ const MenuComp=()=>{
         <div className="main-container">
                 <h1>Our Menu</h1>
                 <div className="nav-container"> 
-                    <span onClick={()=>showAllItems()}>All </span>
-                    <span onClick={()=>showBreakfastItems()}>Breakfast </span>
-                    <span onClick={()=>showLunchItems()}>Lunch </span>
-                    <span onClick={()=>showShakesItems()}>Shakes</span>
+                    <span id="main"  onClick={()=>showAllItems()}>All </span>
+                    <span id="filter-btn-1" onClick={()=>showBreakfastItems()}>Breakfast </span>
+                    <span  id="filter-btn-1" onClick={()=>showLunchItems()}>Lunch </span>
+                    <span id="filter-btn-1" onClick={()=>showShakesItems()}>Shakes</span>
                 </div>
                 <div className="items-container">
                     {
