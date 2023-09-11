@@ -56,14 +56,17 @@ img{
     /* border:2px solid black; */
 }
 
-.right-container .title{
+ .title{
+    display: flex;
     color:tomato;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
     /* gap:20px; */
 }
 
 .title{
     font-weight: 500;
+    font-size: 18px;
 }
 
 .nav-container > span{
